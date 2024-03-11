@@ -1,0 +1,358 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+}
+ #logoimage{
+    width: 100px;
+    height: 50px;
+    margin-right: 20px;
+}
+.navbar{
+    background-color:  #092a5b;
+} 
+.nav-link{
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+}
+.navbar-brand{
+    color: #fff;
+    font-family: 'Anton', sans-serif;
+}
+.navbar-brand:hover{
+    color: #dc143c;
+}
+.btn{
+margin: 5px;
+}
+
+.nav-item a:hover{
+ color: #dc143c;
+}
+
+#Packages{
+    background-color: #1d447f;
+    
+}
+.dropdown-menu a :hover{
+    color:#dc143c;
+}
+.dropdown-item a{
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+}
+.dropdown-item:not(:hover) {
+    color: #fff;
+}
+.jumbotron {
+    background-image: url('BG1.avif');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #1b779f;
+    color: white; 
+    /* clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 99%, 52% 94%, 0 100%); */
+  }
+  
+  #hero h1,h2 {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  color: #f8f7f3;
+  text-decoration: solid;
+}
+#hero h1 {
+  color: #3c235b;
+  font-family: "Holtwood One SC", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+#welcomename {
+    margin-bottom: 20px;
+}
+
+#Placename {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+.btn{
+    text-decoration: none;
+    color: #fff;
+}
+#change h1,h2,p{
+    color:#000; 
+    font-family: 'Ubuntu', sans-serif;
+}
+.btn{
+    transition: background-color 0.3s ease-in-out;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.navbar-toggler-icon{
+    color: #fff;
+}
+
+#change{
+    background-color:#ba8b93;
+}
+#change h2{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+#textchange{
+     font-size: 30px;
+     font-family: "Holtwood One SC", serif;
+     
+     
+}
+#textchange:after{
+     content: "";
+    animation-name: textchangeanim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    color: #dc143c;
+}
+/* for text transition */
+@keyframes textchangeanim {
+    0%{
+      content: " ";
+    }
+    25% {
+        content:" United states";                 
+    }
+    50% {
+        content:"India";                   
+    }
+    75% {
+        content:"France";                
+    }
+    100% {
+        content:"Germany";                    
+    }
+}
+
+#cards{
+  width: 100%;
+  margin-bottom: 10px;
+  box-shadow:2px  2px 6px rgba(0,0,0,.2);
+  overflow: hidden;
+  border: 1px solid black;
+  transition: transform 0.2s;
+}
+
+/* packages */
+#packages .card{
+  height: 600px;
+  
+}
+
+#packages .card img{
+    height: 200px;
+}
+#star {
+    color: orange;
+    margin: 10px 0px;
+}
+/* Services  */
+#services .card{
+  
+  height: 400px;
+}
+#services .image{
+    font-size: 80px;
+    margin-bottom: 10px;
+    text-align:center;
+}
+
+#services ul{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#services h5{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 26px;
+}
+
+
+
+/* Booking card */
+#page2 {
+    display: flex;
+    background-color: #092a5b;
+  }
+  #bookings {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 5px #c5c5c5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 25px;
+    gap: 20px;
+  }
+  .brand-logo {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -1px 0px 5px black;
+    background-color: #87cfeb93;
+    border-radius: 5px;
+  }
+  .brand-logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    filter: drop-shadow(5px 5px 15px);
+    border-radius: 5px;
+  }
+  .booking-info {
+    width: 50%;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: -1px 0px 5px black;
+    border-radius: 5px;
+    overflow-x: hidden;
+    padding: 20px;
+    background-color: #87cfeb93;
+  }
+ 
+  select {
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: grey;
+    border-radius: 5px;
+    /* background-color: aqua; */
+  }
+  .form-floating textarea {
+    height: 50px;
+    /* background-color: aqua */
+  }
+  .form-control,
+  input {
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    /* background-color: aqua; */
+  }
+  label {
+    margin-top: 10px;
+  }
+  .book-btn {
+    margin-top: 30px;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: rgb(206, 230, 252);
+    transition: all ease 0.5s;
+  }
+  .book-btn:hover {
+    box-shadow: -3px 3px black;
+  }
+  .form-floating {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* Booking card ends */
+
+  
+  /* Aboutus starts */
+  #aboutus img{
+    box-shadow: 2px 4px 6px black; 
+  }
+  #aboutus p{
+    color: black;
+    text-align: justify;
+    line-height: 25px;
+  }
+  #aboutus h5{
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+  }
+
+  #aboutus .row{
+    align-items: center;
+  }
+  #aboutus h1{
+    font-family: lucida sans-sarif;
+  }
+   span{
+    color:#1b779f;
+  }
+  /* Aboutus ends */
+
+  
+  /* slider */
+  #slider img{
+    height: 500px;  
+    object-fit: cover;
+    transition: all 0.4s ease-in-out;
+  }
+  #slider p{
+    color: #fff;
+  }
+
+  #slider .carousel-item:hover img{
+    transform: scale(1.1);
+  }
+  /* Footer */
+  .footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    background-color: #092a5b;
+    color: #fff;
+    
+  }
+  
+  .footer i{
+    color: #fff;
+    margin-right: 10px;
+  }
+  .footer a{
+    color: #fff;
+  }
+  .footer p{
+    color: #fff;
+  }
+
+  @media (max-width:650px) {
+    #bookings{
+        flex-direction: column;
+    }
+    .brand-logo{
+        width: 100%;
+    }
+    .booking-info{
+        width: 100%;
+    }
+  }
+
+ 
+
+ 
+  

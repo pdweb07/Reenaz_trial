@@ -1,0 +1,743 @@
+
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+    <title>ASRADVANTURES</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Holtwood+One+SC&family=Protest+Guerrilla&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg  ">
+        <img src="logo1.jpg" alt="logo image" id="logoimage"> 
+          <a class="navbar-brand " href="#">ASR Advantures </a>
+      
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon active"><i class="fa-solid fa-list"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"><span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="bi bi-house"></i>Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="bi bi-journal-bookmark"></i>Book</a>
+            </li>
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="bi bi-box2-heart"></i>Packages
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="Packages">
+                <a class="dropdown-item" href="#">United states</a>
+                <a class="dropdown-item" href="#">India</a>
+                <!-- <div class="dropdown-divider"></div> -->
+                <a class="dropdown-item" href="#">France</a>
+                <a class="dropdown-item" href="">Germany</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="bi bi-briefcase"></i>Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="bi bi-film"></i>Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#"><i class="bi bi-file-person"></i>About Us</a>
+            </li>
+          </ul>
+
+          <button class="btn btn-success" id="regbtn" data-toggle="modal" data-target="#signin-model" ><i class="bi bi-journal-text"></i>Register</button>
+          &nbsp;
+          <button class="btn btn-success" data-toggle="modal" data-target="#login-model"><i class="bi bi-box-arrow-in-left"></i>Login</button>
+
+        </div>
+      </nav>
+    <!-- Navigation bar ends -->
+
+    <!-- dashboard part -->
+    <div class="jumbotron" id="hero">
+      <div class="container">
+        <h1 class="display-5">WELCOME TO ASR Advantures</h1><br>
+        <h2>Visit Places</h2>        
+        <span id="textchange"></span><br>
+        <button type="button" class="btn btn-primary btn-sm active">Book Now</button>
+        </div>
+      </div>
+    </div>
+
+<!-- dashboard ends -->
+
+
+<!-- Booking  form starts here -->
+<div class="container-fluid mt-4">
+  <div class="Booking">
+    <h2 class="text-center mb-3">BOOKING<span>FORM</span></h2><hr  class="w-50 bg-danger">
+      <section id="page2">
+        <div id="bookings">
+        
+          <div class="brand-logo">
+            <img src="r.jpeg" alt="booking image"/>
+          </div>
+          <div class="booking-info">
+            <form action="">
+              <select class="form-select first-input" required>
+                <option value="">Select where you want to go</option>
+                <option value="India">India</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="France">France</option>
+                <option value="Norway">Norway</option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="United-States">United-States</option>
+                <option value="Germany">Germany</option>
+                <option value="Australia">Australia</option>
+                <option value="NewYork">NewYork</option>
+              </select>
+
+              <label for="">Number of Person</label>
+              <select class="form-select second-input" aria-label="Default select example" required>
+                <option value="">Click to select</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">four</option>
+                <option value="5">five</option>
+              </select>
+
+              <label for="">Start date</label>
+              <input class="fourth-input" type="date" value="" name="startdate" id="start" required/>
+
+              <label for="">End date</label>
+              <input class="third-input" type="date" value="" name="enddate" id="end" required/>
+
+              <div class="form-floating">
+                <label for="floatingTextarea">Description</label>
+                <textarea class="form-control fifth-input"placeholder="Leave a comment here"id="floatingTextarea"rows="3"minlength="50" maxlength="500"required></textarea>
+              </div>
+              <div>
+                <button onclick="onSubmit()" type="submit" class="book-btn btn-primary">Book Now</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+</div>
+<!--  booking form ends here -->
+
+<!-- packages -->
+<div class="container-fluid" id="packages">
+  <h2 class="text-center my-3">PACK<span>AGES</span></h2><hr  class="w-50 bg-danger">
+  <div  class="row m-4">
+      <div class="col-md-4">
+          <div class="card" id="cards">
+              <img class="card-img-top" src="India.avif" alt="India">
+              <div class="card-body">
+                  <h3 class="text-center">India</h3>
+                  <p class="card-text">Attractions of India  like Taj Mahal, Red Fort ,
+                  Rajasthan: The Desert Rose,
+                  Goa: The Party Capital of India,
+                  Meghalaya: One of the Best Tourist Places in India In the lap of Nature,
+                  Kerala: Backwaters of God's own Country,
+                  Andaman and Nicobar Islands: The Aquatic Playground,
+                  Ladakh: Road trips, Monasteries and Valleys.
+                 </p>
+                  <div id="star">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  </div>
+                  <h5><span id="packageprice">Package Price: $300</span></h5> 
+                  <button type="button" class="btn btn-warning">Book Now</button>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-md-4">
+          <div class="card" id="cards">
+              <img class="card-img-top" src="unitedstates.avif" alt="unitedstates">
+              <div class="card-body">
+                  <h3 class="text-center">United States</h3>
+                  <p class="card-text">Attractions of United states are Statue of Liberty: Symbol of freedom in New York City. Yellowstone National Park: Oldest national park in the world, home to geysers and wildlife. Disneyland & Disney World: Iconic amusement parks in California and Florida. Golden Gate Bridge: San Francisco's iconic suspension bridge and many more.
+                      </p>
+                  <div id="star">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  </div>
+                  <h5><span id="packageprice">Package Price: $400</span></h5> 
+                  <button type="button" class="btn btn-warning">Book Now</button>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-md-4">
+          <div class="card" id="cards">
+              <img class="card-img-top" src="france.avif" alt="france">
+              <div class="card-body">
+                      <h3 class="text-center">France</h3>
+                      <p class="card-text">Attractions of France are Eiffel Tower, Louvre Museum,
+                          Disneyland, Musee D'Orsay, Musee Rodin, Luxembourg Palace, 
+                          Palais Garnier Opera House, Place Massena, Parc Phoenix, Cimiez Monastery, 
+                          Parc de La Tête d'Or, Place Bellecour, Zoo De Lyon, Strasbourg Cathedral, 
+                          Musee Alsacien, Parc National des Calanques and many more.</p>
+                      <div id="star">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                      </div>
+                      <h5><span id="packageprice">Package Price: $200</span></h5> 
+                      <button type="button" class="btn btn-warning">Book Now</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div  class="row m-4">
+      <div class="col-md-4">
+          <div class="card" id="cards">
+              <img class="card-img-top" src="germany.avif" alt="germany">
+              <div class="card-body">
+                <h3 class="text-center">Germany</h3>
+                <p class="card-text">Attractions of Germany are The Brandenburg Gate,
+                  The Rebuilt Reichstag, Museum Island, Munich Residenz, Marienplatz Square, 
+                  Frauenkirche, Städel Museum, The Palm Garden, Frankfurt Cathedral, 
+                  Miniatur Wunderland,and  many more beautiful places are there to visit.
+                </p>
+                  <div id="star">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  </div>
+                  <h5><span id="packageprice">Package Price: $300</span></h5> 
+                  <button type="button" class="btn btn-warning">Book Now</button>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-md-4">
+          <div class="card" id="cards">
+              <img class="card-img-top" src="paris.avif" alt="paris">
+              <div class="card-body">
+                <h3 class="text-center">Paris</h3>
+                <p class="card-text">Attractions of Paris are Eiffel Tower, Paris has countless other gorgeous landmarks and monuments that add to the beauty of the spacious boulevards and their charming cafés. French cuisine is also world-famous, and you can find some of the best of it in Paris and many   there.</p>
+                  <div id="star">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  </div>
+                  <h5><span id="packageprice">Package Price: $400</span></h5> 
+                  <button type="button" class="btn btn-warning">Book Now</button>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-md-4">
+          <div class="card" id="cards">
+              <img class="card-img-top" src="london.avif" alt="london">
+              <div class="card-body">
+                <h3 class="text-center">London</h3>
+                <p class="card-text">Attractions of London are Buckingham Palace,Oxford Street,Covent Garden,Westminster Abbey,The Big Smoke, London Town, or the Square Mile: Some other nicknames for London.Londinium: The name given to the city by the Romans when they founded it.</p>
+                      <div id="star">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                      </div>
+                      <h5><span id="packageprice">Package Price: $200</span></h5> 
+                      <button type="button" class="btn btn-warning">Book Now</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div  class="row m-4">
+      <div class="col-md-4">
+          <div class="card" id="cards">
+              <img class="card-img-top" src="maldieves.avif" alt="maldieves">
+              <div class="card-body">
+                <h3 class="text-center">Maldieves</h3>
+                <p class="card-text">Attractions of Maldieves are With its stunning islands, mesmerizing beaches, and turquoise waters, Maldives is famous for its exciting water activities. If you are an adventure enthusiast, the variety of water sports will make you want to stay here forever and even mant more places are there to explore..</p>
+                  <div id="star">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  </div>
+                  <h5><span id="packageprice">Package Price: $300</span></h5> 
+                  <button type="button" class="btn btn-warning">Book Now</button>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-md-4">
+          <div class="card" id="cards">
+              <img class="card-img-top" src="southafrica.avif" alt="southafrica">
+              <div class="card-body">
+                <h3 class="text-center">South Africa</h3>
+                <p class="card-text">Attractions of is the Scenic beauty: South Africa really is many worlds in one. Expect stunning coastlines, dramatic mountainscapes, huge areas of untamed bushveld, starkly beautiful semi-deserts, lakes, waterfalls, spectacular canyons, forests and wide plains, plus Cape Town and many more are there.</p>
+                  <div id="star">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  </div>
+                  <h5><span id="packageprice">Package Price: $400</span></h5> 
+                  <button type="button" class="btn btn-warning">Book Now</button>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-md-4">
+          <div class="card" id="cards">
+              <img class="card-img-top" src="france.avif" alt="Card image cap">
+              <div class="card-body">
+                      <h3 class="text-center">France</h3>
+                      <p class="card-text">Attractions of France are Eiffel Tower, Louvre Museum,
+                          Disneyland, Musee D'Orsay, Musee Rodin, Luxembourg Palace, 
+                          Palais Garnier Opera House, Place Massena, Parc Phoenix, Cimiez Monastery, 
+                          Parc de La Tête d'Or, Place Bellecour, Zoo De Lyon, Strasbourg Cathedral, 
+                          Musee Alsacien and many more.</p>
+                      <div id="star">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                      </div>
+                      <h5><span id="packageprice">Package Price: $200</span></h5> 
+                      <button type="button" class="btn btn-warning">Book Now</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+</div>
+<!-- packages ends -->
+
+
+<!-- services  -->
+<div class="container-fluid mt-5" id="services">
+  <h2 class="text-center mb-3">SER<span>VICES</span></h2><hr  class="w-50 bg-danger">
+  <div class="row mt-4">
+        <div class="col-md-4 ">
+          <div class="card" id="cards">  
+            <div class="card-body">
+              <div class="image">🏨</div>
+              <h5 class="card-title text-center mt-3">Affordable Hotel</h5>
+              <ul style="text-align: left;">
+                <li>Enjoy comfortable stays at budget-friendly prices.</li>
+                <li>Our hotels are equipped with all the amenities you need for a comfortable stay.</li>
+                <li>We offer discounts and packages based on your preferences.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+          
+        <div class="col-md-4">
+          <div class="card" id="cards">  
+            <div class="card-body">
+              <div class="image">🍔</div>
+              <h5 class="card-title text-center mt-3">Food & Drinks</h5>
+              <ul style="text-align: left;">
+                <li>Savor delicious meals and refreshing beverages at our restaurants and bars.</li>
+                <li>Our chefs use only the finest ingredients to create dishes that will leave you wanting more.</li>
+                <li>Contact Us For More Details</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-md-4">
+          <div class="card" id="cards">  
+            <div class="card-body">
+              <div class="image">🔒</div>
+              <h5 class="card-title text-center mt-3">Safety Guide</h5>
+              <ul style="text-align: left;">
+                <li>Stay informed and secure with our comprehensive safety guidelines.</li>
+                <li>24/7 security surveillance available</li>
+                <li>Regular sanitation of common areas</li>
+                <li>Emergency procedures and contact information provided</li>
+            </ul><br>
+            </div>
+          </div>
+        </div>    
+  </div>
+
+  <div class="row mb-4">
+    <div class="col-md-4">
+      <div class="card" id="cards">  
+        <div class="card-body">
+          <div class="image">🎉</div>
+          <h5 class="card-title text-center mt-3">Entertainment</h5>
+          <ul style="text-align: left;">
+            <li>Experience exciting events and entertainment options during your stay.</li>
+            <li>Live music performances</li>
+            <li>Themed parties and events</li>
+            <li>Outdoor movie nights</li>
+            <li>Game rooms and recreational activities</li>
+            <li>Cultural shows and performances</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card" id="cards">  
+        <div class="card-body">
+          <div class="image">🏊‍♂️</div>
+          <h5 class="card-title text-center mt-3">Pool & Spa</h5>
+          <ul style="text-align: left;">
+            <li>Relax and rejuvenate with our luxurious pool and spa facilities.</li>
+            <li>Outdoor swimming pool</li>
+            <li>Heated indoor pool</li>
+            <li>Jacuzzi and hot tubs</li>
+            <li>Sauna and steam rooms</li>
+            <li>Professional massage services</li>
+          </ul><br><br>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card" id="cards">  
+        <div class="card-body">
+          <div class="image">🚗</div>
+          <h5 class="card-title text-center mt-3">Transportation</h5>
+          <ul style="text-align: left;">
+            <li>Convenient transportation services to explore the area hassle-free.</li>
+            <li>City tour buses</li>
+            <li>Private car rentals</li>
+            <li>Chauffeur services</li>
+            <li>Bicycle rentals</li>
+          </ul><br><br><br>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+<!-- services ends -->
+<!-- register and signin starts -->
+<div class="modal" id="login-model">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">Please log In</div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email"class="form-control"id="exampleInputEmail1"aria-describedby="emailHelp" placeholder="Email id"/>
+            <div id="emailHelp" class="form-text">
+              We'll never share your email with anyone else.
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1"/>
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+        <div class="isthere">
+          Don't Have an Account? Please<a href="" data-toggle="modal" data-target="#signin-model" display="block">Register</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal" id="signin-model">
+<div class="modal-dialog">
+<div class="modal-content">
+  <div class="modal-header">Please Register</div>
+  <div class="modal-body">
+    <form>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Full Name</label>
+        <input type="text" class="form-control" />
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Mobile Number</label>
+        <input type="number" class="form-control" aria-describedby="emailHelp"/>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email Address</label>
+        <input type="email"class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
+        <div id="emailHelp" class="form-text">
+          We'll never share your email with anyone else.
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+         <input type="password"class="form-control"id="exampleInputPassword1"/>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Reenter the password</label>
+        <input type="password"class="form-control"id="exampleInputPassword1"/>
+      </div>
+      <button type="submit" class="btn btn-primary">Register</button>
+
+    </form>
+    <div class="isthere">
+      Already Have an Account? Please <a href="" data-toggle="modal" data-target="#login-model">Log In</a>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<script>
+$(document).ready(function () {
+    $("#email-id").keyup(function () {
+      if (mailCheck()) {
+        $("#emailtext").text("Valid email").css({"color": "green"})
+        $("#email-id").css("border", "2px solid green");
+        
+      } else {
+        $("#emailtext").text("Not a Valid email!").css("color","red")
+        $("#email-id").css("border", "2px solid red");
+        
+      }
+    });
+
+    function mailCheck() {
+      let mailData = $("#email-id").val();
+      let mailPattern = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/;
+
+      if (mailPattern.test(mailData)) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+
+    $("#password").keyup(function (){
+      if(passwordCheck()){
+        $("#pw-text").text("password is correct")
+      }
+      else{
+        $("#pw-text").text("password should contain alphabates (A-Z),(a-z),numbers (0-9),special characters (#?!@$%^&*-) and within range (8-16)")
+      }
+    })
+
+    function passwordCheck(){
+      let passwordData = $("#password").val();
+      let passwordPattern = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,16}$/;
+      
+      if(passwordPattern.test(passwordData)){
+        return true
+      }
+      else{
+        return false;
+      }
+      return passwordData;
+    }
+
+    $("#repassword").keyup(function(){
+      let passwordData = $("#password").val();
+      let repasswordData = $("#repassword").val();
+
+      if(passwordData == repasswordData){
+        $("#repw-text").text("password verified")
+      }
+      else{
+        $("#repw-text").text("password is not correct")
+      }
+
+    });
+
+var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var mm = String(today.getMonth() + 1).padStart(2, '0');
+var yyyy = today.getFullYear();
+
+today = yyyy + '-' + mm + '-' + dd;
+$('#start').attr('min',today);
+$('#end').attr('min',today);
+
+});
+</script>
+<script src="index.js"></script>
+
+<!-- register and signin ends -->
+
+<!-- slider images -->
+<div class="container-fluid my-5" id="slider">
+  <h2 class="text-center mb-3">GALLERY<span>MEMORIES</span></h2><hr  class="w-50 bg-danger">
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="dubai.avif" alt="First slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>DUBAI</h5><hr  class="w-50 bg-danger">
+          <p>Dubai is the most populous city in the United Arab Emirates (UAE) and the capital of the Emirate of Dubai, the most populated of the country's seven.The emirate's capital, also named Dubai, is the largest city of the federation. The city is located on a small creek in the northeast part of the state.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="london.avif" alt="Second slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>LONDON</h5><hr  class="w-50 bg-danger">
+          <p>London is the capital city of the United Kingdom. It is the U.K.'s largest metropolis and its economic, transportation, and cultural centre. London is also among the oldest of the world's great cities, with its history spanning nearly two millennia.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="parisslider.avif" alt="Third slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>PARIS</h5><hr  class="w-50 bg-danger">
+          <p>Paris has a long history of being associated with love and romance. The city has been the backdrop for countless romantic novels, films, and songs, solidifying its reputation as a destination for lovers. And let's not forget about the iconic Eiffel Tower, which has become a symbol of love and romance around the world.</p>
+        </div>
+      </div>
+  
+      <div class="carousel-item ">
+        <img class="d-block w-100" src="southafricaslider.avif" alt="Fourth slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>SOUTHAFRICA</h5><hr  class="w-50 bg-danger">
+          <p>South Africa is the world's biggest producer of gold, platinum, chromium, vanadium, manganese and alumino-silicates. It also produces nearly 40% of the world's chrome and vermiculite. Durban is the largest port in Africa and the ninth largest in the world. South Africa generates two-thirds of Africa's electricity.</p>
+          </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="germanyslider.avif" alt="Fifth slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>GERMANY</h5><hr  class="w-50 bg-danger">
+          <p>Germany, located in the heart of Europe with 16 states, is famous for being the largest economy in Europe as well as one of the largest in the world. Its captivating history is told through its old-fashioned architecture, castles, palaces, cathedrals, and natural landscapes.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="India.avif" alt="sixth slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>INDIA</h5><hr  class="w-50 bg-danger">
+          <p>India is the world's seventh-largest country and most populated country. It's located on the Indian tectonic plate, which is part of the Indo-Australian Plate. India is a megadiverse country with a high level of biological diversity.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+</div> 
+<script>
+  $('.carousel').carousel({
+  interval: 2000
+})
+</script>
+
+<!-- slider images end -->
+<!-- about us section starts here -->
+<div class="container-fluid my-5" id="aboutus">
+  <h2 class="text-center mb-3">ABOUT   <span>US</span></h2>
+    <hr width="300px;" class="bg-danger">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="register.avif" class="img-fluid">
+    </div>
+    <div class="col-md-6">
+      <h5 class="my-3">ASRADVANTURES</h4>
+      <p>ASRADVENTURES is a dynamic and innovative adventure travel company specializing in organizing exhilarating outdoor experiences for thrill-seekers and nature enthusiasts. With a commitment to delivering unforgettable adventures, ASRADVENTURES caters to individuals, families, and groups looking to explore the world's most captivating landscapes.It was founded in 2023 with a vision to redefine adventure tourism by offering unique and immersive travel experiences that combine adrenaline-pumping activities with cultural exploration and environmental awareness.ASRADVENTURES is dedicated to promoting sustainable tourism practices while providing clients with safe, memorable, and transformative adventure experiences.
+      </p>
+    </div>
+  </div>
+</div>
+<!-- about us section ends here -->
+<!-- Footer part starts -->
+<div class="footer mt-5 ">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 col-sm-12">
+        <h4><i class="bi bi-globe-asia-australia"></i>ASR ADVANTURES</h4><hr  class="w-100 bg-danger">
+        <p>ASRADVENTURES is a dynamic and innovative adventure travel company specializing in organizing exhilarating outdoor experiences for thrill-seekers and nature enthusiasts.</p>
+      </div>
+      <div class="col-md-9 col-sm-12">
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <ul class="list-unstyled text-left footer-links">
+              <h4><i class="bi bi-link-45deg"></i>Links</h4><hr  class="w-100 bg-danger">
+              <li><a href="#" class="nav-link"><i class="bi bi-arrow-right-square"></i>Home</a></li>
+              <li><a href="#" class="nav-link"><i class="bi bi-arrow-right-square"></i>Book</a></li>
+              <li><a href="#" class="nav-link"><i class="bi bi-arrow-right-square"></i>Gallery</a></li>
+              <li><a href="#" class="nav-link"><i class="bi bi-arrow-right-square"></i>Packages</a></li>
+              <li><a href="#" class="nav-link"><i class="bi bi-arrow-right-square"></i>Services</a></li>
+              <li><a href="#" class="nav-link"><i class="bi bi-arrow-right-square"></i>AboutUs</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <h4><i class="bi bi-bezier2"></i>Services</h4><hr class="w-100 bg-danger">
+            <ul class="list-unstyled text-left footer-links">
+              <li><a href="#" class="nav-link"><i class="bi bi-arrow-right-square"></i>Affordable hotels</a></li>
+              <li><a href="#" class="nav-link"><i class="bi bi-arrow-right-square"></i>Food & Drinks</a></li>
+              <li><a href="#" class="nav-link"><i class="bi bi-arrow-right-square"></i>Safety Guide</a></li>
+              <li><a href="#" class="nav-link"><i class="bi bi-arrow-right-square"></i>Entertainment</a></li>
+              <li><a href="#" class="nav-link"><i class="bi bi-arrow-right-square"></i>Pool & Spa</a></li>
+              <li><a href="#" class="nav-link"><i class="bi bi-arrow-right-square"></i>Transportation</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4><i class="bi bi-bookmark-plus"></i>Follow Us On</h4><hr class="w-100 bg-danger">
+            <ul class="list-unstyled text-left footer-link" id="footer-content">
+              <li><a href="#" class="nav-link"><i class="bi bi-whatsapp"></i>WhatsApp</a></li>
+              <li><a href="#" class="nav-link"><i class="bi bi-instagram"></i>Instagram</a></li>
+              <li><a href="#" class="nav-link"><i class="bi bi-twitter"></i>Twitter</a></li>
+              <li><a href="#" class="nav-link"><i class="bi bi-facebook"></i>Facebook</a></li>
+              <li><a href="#" class="nav-link"><i class="bi bi-linkedin"></i>LinkedIn</a></li>
+              <li><a href="#" class="nav-link"><i class="bi bi-youtube"></i>Youtube</a></li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+    </div><br>
+    <div class="text-center">@2024 ASR Advantures.All Rights are Reserved</div>
+  </div>
+     
+</div>
+</div>
+<!-- footer part ends here -->
+
+</body>
+</html>
